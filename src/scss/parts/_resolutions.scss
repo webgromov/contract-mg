@@ -1,0 +1,483 @@
+@media (max-width: 1500px) {
+	.blog {
+		&-item {
+			&-preview {
+				height: 250px;
+			}
+		}
+		&-arrowForward {
+			height: 250px;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	section {
+		padding: 50px 0;
+	}
+	.header {
+		&-search {
+			margin: 0 50px;
+		}
+		&-menu {
+			&-main {
+				display: none;
+			}
+		}
+	}
+	.contact {
+		padding: 50px 0;
+		.container-fluid {
+			padding: 0;
+		}
+		.row {
+			margin: 0;
+		}
+		&-info {
+			margin-left: 0;
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.blog {
+		&-item {
+			img {
+				height: 200px;
+			}
+			&-title {
+				font-size: 17px;
+				margin: 15px 0;
+			}
+			&-more {
+				font-size: 14px;
+			}
+		}
+		&-arrowForward {
+			height: 200px;
+			&-desc {
+				font-size: 15px;
+			}
+		}
+	}
+	.resources {
+		&-list {
+			li h3 {
+				font-size: 25px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.header {
+		&-main {
+			text-align: center;
+			margin: 50px 0;
+		}
+		&-descAnswer {
+			margin-left: 0;
+			&:before {
+				display: none;
+			}
+		}
+		&:before {
+			opacity: .7;
+		}
+	}
+	.segmentation {
+		.container {
+			max-width: 100%;
+		}
+		&-item {
+			padding: 25px;
+			border-color: #fff;
+			&:hover {
+				background-color: rgba($cyan, .3);
+			}
+		}
+	}
+
+	.resources {
+		&-list {
+			li {
+				margin-bottom: 0;
+				a {
+					padding: 20px 0 20px 100px;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+		padding-bottom: 0;
+	}
+
+	.contact {
+		&-info {
+			&-title {
+				img {
+					width: 30px;
+				}
+				h3 {
+					font-size: 21px;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.section-head .title {
+		font-size: 24px;
+	}
+	.interview {
+		.section {
+			&-head {
+				.title {
+					white-space: normal;
+				}
+			}
+		}
+		&-textMount {
+			#title {
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+@media (max-width: 870px) {
+	.header {
+		.logo {
+			&-text {
+				h4 {
+					font-size: 12px;
+				}
+				p {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		max-width: 100%;
+	}
+	.header {
+		.logo {
+			margin-left: 0;
+		}
+		&-cap {
+			&-right {
+				justify-content: flex-end;
+			}
+		}
+		&-search {
+			display: none;
+			&-icon {
+				width: 25px;
+				&#searchToggler {
+					display: block;
+					margin-right: 20px;
+				}
+			}
+			#closeMobileSearch {
+				display: block;
+			}
+		}
+		&-menu {
+			&-advanced {
+				ul {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+	.blog {
+		&-item {
+			img {
+				height: 300px;
+			}
+			&-title {
+				font-weight: bold;
+			}
+			margin-bottom: 40px;
+		}
+		&-arrowForward {
+			flex-direction: row-reverse;
+			height: auto;
+			border: 2px solid $dark;
+			padding: 20px 5px;
+			overflow: hidden;
+			position: relative;
+			&-desc {
+				margin: 0;
+			}
+			&-icon {
+				width: 20px;
+				margin-left: 20px;
+			}
+			&:after {
+				transition: .2s;
+				content:'';
+				z-index: -1;
+				background-color: #3e3d3d;
+				position: absolute;
+				bottom: -100%;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover {
+				background-color: transparent;
+				color: #fff;
+				.blog-arrowForward-icon {
+					display: none;
+				}
+			}
+			&:hover:after {
+				bottom: 50%;
+				opacity: 1;
+				bottom: 0;
+			}
+		}
+	}
+	.interview {
+		&-slider {
+			height: 350px;
+		}
+	}
+	.segmentation {
+		padding: 40px 0;
+		&-item {
+			height: auto;
+			margin-bottom: 30px;
+		}
+	}
+	.contact {
+		&-info {
+			max-width: none;
+			padding: 20px 30px;
+			&-desc {
+				margin: 10px 0 0;
+				&:last-child {
+					display: none;
+				}
+			}
+		}
+		&-form {
+			border: 1px solid $dark;
+			padding: 30px;
+		}
+	}
+	.footer {
+		padding: 30px 0;
+		&-left {
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 30px;
+			border-right: none;
+		}
+		&-logo {
+			display: none;
+		}
+		h3 {
+			margin-bottom: 15px;
+		}
+		&-left, &-right {
+			padding-bottom: 20px;
+			border-bottom: 1px solid rgba($light-gray, .2);
+		}
+	}
+	.blogPage {
+		header {
+			.header-middle {
+				#topPosts {
+					.topPost {
+						a {
+							h3 {
+								font-size: 32px!important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.posts {
+			.post {
+				h3 {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+	.webinar {
+		&-player {
+			height: 350px!important;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.section {
+		&-head {
+			.title {
+				font-size: 20px;
+			}
+			.desc {
+				font-size: 16px;
+			}
+		}
+	}
+	.btn {
+		font-size: 15px;
+	}
+	.header {
+		&-title, &-desc, &-descAnswer  {
+			white-space: normal;
+			text-align: left;
+		}
+		&-title {
+			font-size: 25px;
+		}
+		&-desc, &-descAnswer {
+			font-size: 13px;
+		}
+	}
+	.interview {
+		&-textMount {
+			#title {
+				font-size: 20px;
+			}
+		}
+	}
+	.resources {
+		&-list {
+			li h3 {
+				font-size: 18px;
+			}
+		}
+		&-lock {
+			&-inner {
+				h2 {
+					font-size: 20px;
+					white-space: normal;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.container, .container-fluid {
+		padding: 0 15px;
+	}
+	.header {
+		&-menu {
+			&-advancedToggler {
+				width: 30px;
+			}
+		}
+	}
+	.blog {
+		&-list {
+			padding: 0;
+		}
+	}
+	.interview {
+		&-slider {
+			height: 250px;
+		}
+	}
+	.segmentation {
+		&-item {
+			h3 {
+				font-size: 22px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+	.contact {
+		&-form {
+			&-field {
+				textarea {
+					height: 100px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 400px) {
+	.header {
+		&-cap {
+			.row > div {
+				max-width: 100%;
+				flex: 0 0 100%;
+			}
+			&-right {
+				justify-content: space-between;
+			}
+			&.light {
+				.header {
+					&-search {
+						&-icon {
+							&#searchToggler {
+								background-color: transparent;
+								width: 25px;
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		.logo {
+			display: none;
+			margin: 0 auto;
+			&-mobileShow {
+				display: block;
+			}
+			&-img {
+				display: none;
+			}
+		}
+		&-search {
+			&-icon {
+				&#searchToggler {
+					margin: 0;
+					width: 15px;
+					background-color: $dark;
+					padding: 10px;
+				}
+			}
+		}
+		&-title {
+			font-size: 20px;
+		}
+		&-desc, &-descAnswer {
+			font-size: 12px;
+		}
+		&-menu {
+			&-advanced {
+				.closer {
+					img {
+						width: 30px;
+					}
+				}
+				ul {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}

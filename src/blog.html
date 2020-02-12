@@ -43,7 +43,7 @@
 								</div>
 							</a>
 							<ul class="header-menu-main vac">
-								<li><a href="#">Блог</a></li>
+								<li class="active"><a href="#">Блог</a></li>
 								<li><a href="#">Интервью</a></li>
 								<li><a href="#">Карьера</a></li>
 								<li><a href="#">Ресурсы</a></li>
@@ -53,7 +53,7 @@
 								<div class="closer"><img id="closeAdvanced" src="img/icons/close.svg" alt=""></div>
 								<ul>
 									<li><a href="#">Главная</a></li>
-									<li><a href="#">Блог</a></li>
+									<li class="active"><a href="#">Блог</a></li>
 									<li><a href="#">Интервью</a></li>
 									<li><a href="#">Карьера</a></li>
 									<li><a href="#">Ресурсы</a></li>
@@ -75,22 +75,27 @@
 		<div class="header-middle">
 			<ul id="topPosts">
 				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
-					<span class="cat">право</span>
-					<h3>Название поста 1</h3>
+					<span class="cat">Контрактный менеджмент</span>
+					<h3>Чек-лист: Процесс управления контрактами</h3>
 					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 				</a></li>
 				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
-					<span class="cat">категория 1</span>
+					<span class="cat">Контрактный менеджмент</span>
+					<h3>Что такое контрактный псевдо-риск?</h3>
+					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				</a></li>
+				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
+					<span class="cat">Переговоры</span>
+					<h3>Подписанный контакт - это только начало переговоров</h3>
+					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				</a></li>
+				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
+					<span class="cat">Английское право</span>
 					<h3>Название поста</h3>
 					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 				</a></li>
 				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
-					<span class="cat">категория 1</span>
-					<h3>Название поста</h3>
-					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-				</a></li>
-				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
-					<span class="cat">категория 1</span>
+					<span class="cat">Контрактные уловки</span>
 					<h3>Название поста</h3>
 					<p class="description">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
 				</a></li>
@@ -99,12 +104,18 @@
 	</header>
 	<section class="posts">
 		<div class="container-fluid">
+			<select id="postsSorting">
+				<option>Все посты</option>
+				<option>Контрактный менеджмент</option>
+				<option>Переговоры</option>
+				<option>География</option>
+			</select>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
 						<img src="img/blog_example1.jpg" alt="">
-						<p class="cat">категория поста</p>
-						<h3>Название поста 1</h3>
+						<p class="cat">Контрактный менеджмент</p>
+						<h3>Чек-лист: Процесс управления контрактами</h3>
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого гор рыбного, букв ручеек грустный но алфавит рот однажды повстречался вопроса безопасную напоивший необходимыми домах языкового выйти текстами рекламных!</p>
 						<p class="blog-item-more">Читать статью</p>
 					</a>
@@ -112,8 +123,8 @@
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
 						<img src="img/blog_example1.jpg" alt="">
-						<p class="cat">категория поста</p>
-						<h3>Название поста 1</h3>
+						<p class="cat">Контрактный менеджмент</p>
+						<h3>Что такое контрактный псевдо-риск?</h3>
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого гор рыбного, букв ручеек грустный но алфавит рот однажды повстречался вопроса безопасную напоивший необходимыми домах языкового выйти текстами рекламных!</p>
 						<p class="blog-item-more">Читать статью</p>
 					</a>
@@ -121,8 +132,8 @@
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
 						<img src="img/blog_example1.jpg" alt="">
-						<p class="cat">категория поста</p>
-						<h3>Название поста 1</h3>
+						<p class="cat">Переговоры</p>
+						<h3>Подписанный контакт - это только начало переговоров</h3>
 						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого гор рыбного, букв ручеек грустный но алфавит рот однажды повстречался вопроса безопасную напоивший необходимыми домах языкового выйти текстами рекламных!</p>
 						<p class="blog-item-more">Читать статью</p>
 					</a>
