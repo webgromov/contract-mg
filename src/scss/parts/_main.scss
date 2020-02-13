@@ -568,6 +568,8 @@
 	}
 	.section-head {
 		color: #000;
+		background: linear-gradient(45deg, $cyan, #D15CE0);
+		padding: 20px;
 	}
 	&-list {
 		li {
@@ -979,6 +981,8 @@
 			border: 1px solid #fff;
 			border-radius: 3px;
 			color: #fff;
+			min-width: 170px;
+			text-align: center;
 			font-weight: bold;
 			transition: .3s;
 		}
