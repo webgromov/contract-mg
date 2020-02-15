@@ -3,6 +3,7 @@
 $dark: #3e3d3d;
 $cyan: #44f6f1;
 $light-gray: #efefef;
+$pink: #D15CE0;
 
 
 
@@ -89,6 +90,12 @@ section {
 	padding: 50px 100px;
 }
 .section {
+	&__line {
+		background-color: $cyan;
+		height: 20px;
+		width: 100%;
+		margin-bottom: 50px;
+	}
 	&-head {
 		margin-bottom: 50px;
 		&.centered {

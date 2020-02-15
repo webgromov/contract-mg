@@ -54,7 +54,7 @@ gulp.task('server', () => {
 
 
 gulp.task('start', gulp.parallel('styles', 'scripts', 'server', () => {
-	gulp.watch('src/scss/*.scss', gulp.series('styles'))
+	gulp.watch('src/scss/**/*.scss', gulp.series('styles'))
 	gulp.watch(uncomprScripts, gulp.series('scripts'))
 	gulp.watch('src/*.html').on('change', browserSync.reload)
 }))
