@@ -92,12 +92,14 @@ $(function() {
 		nextArrow: '<img src="img/icons/arrow-down.svg" class="slick-next">'
 	})
 
-	const $steps = $('.register-steps')
+	/*const $steps = $('.register-steps')
 	const currentStep = $steps.attr('data-step')
 
 	for(let i = 0; i < currentStep; i++) {
 		$steps.children().eq(i).addClass('active-step')
-	}
+	}*/
+
+	// Modals 
 
 	$('.btn[data-modal-caller]').on('click', function() {
 		let modalId = this.dataset.modalCaller
@@ -114,6 +116,24 @@ $(function() {
 	$('.getContacts').on('click', function(e) {
 		// e.preventDefault()
 		$(this).addClass('contacted').html('<a href="tel:799999999">+7 (999) 999 99 99</a>')
+	})
+
+	// Multiple Fields
+
+	$('.multiple .btnAdd').on('click', function(e) {
+		e.preventDefault()
+		const multipleName = $(this).prev('input')
+		const $box = $(this).parent().parent().find('.multiple-box')
+		if(multipleName.val().length > 0) {
+			const multipleHTML = `<li><span class="multiple-box-name">${multipleName.val()}</span><img src="img/icons/close.svg" alt="" class="closer"></li>`
+			if($box.html().trim().indexOf(multipleHTML) == -1) {
+				$box.append(multipleHTML)
+				multipleName.val('')
+			}
+		}
+	})
+	$('.multiple-box').on('click', 'li .closer', function() {
+		$(this).parent().remove()
 	})
 
 })
