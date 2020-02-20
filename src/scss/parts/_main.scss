@@ -578,12 +578,12 @@
 		background-color: rgba(#fff, .2);
 	}
 	.section-head {
-		color: #fff;
-		// background: linear-gradient(45deg, $cyan, $pink);
-		background-color: $dark;
+		color: #000;
+		background: linear-gradient(45deg, $cyan, $pink);
+		// background-color: $dark;
 		padding: 20px;
 		.desc.frontLine:before {
-			background-color: #fff;
+			background-color: $dark;
 		}
 	}
 	&-list {
@@ -1007,6 +1007,54 @@
 			transform: scale(1.1);
 			background-color: rgba(#fff, .8);
 			color: #000;
+		}
+	}
+}
+.vacancy {
+	&-list {
+		&-item {
+			border: 1px solid $dark;
+			padding: 25px;
+			.btn {
+				border-color: $dark;
+				width: 100%;
+				&:after {
+					background-color: $dark;
+					opacity: 1;
+				}
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+	&-data {
+		display: flex;
+		margin-bottom: 25px;
+	}
+	&-avatar {
+		width: 126px;
+		object-fit: cover;
+		margin-right: 25px;
+	}
+	.name {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.list {
+		li {
+			span {
+				font-size: 16px;
+				&:nth-child(2) {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.location {
+		margin-bottom: 0;
+		img {
+			width: 20px;
 		}
 	}
 }
