@@ -9,6 +9,14 @@
 			height: 250px;
 		}
 	}
+	.vacancy {
+		&-avatar {
+			width: 120px;
+		}
+		.name {
+			font-size: 20px;
+		}
+	}
 }
 
 @media (max-width: 1199px) {
@@ -132,6 +140,34 @@
 	.webinar {
 		.row {
 			margin-bottom: 20px;
+		}
+	}
+	.modals {
+		&-window {
+			&[data-modal=vacancy] {
+				min-width: 400px;
+				.modals-window-content {
+					width: 100%;
+				}
+				.vacancyModal {
+					&-data {
+						flex-direction: column;
+					}
+					&-info {
+						margin-left: 0;
+						margin-top: 20px;
+					}
+				}
+			}
+			.vacancyModal {
+				&-main {
+					text-align: center;
+					.avatar {
+						width: 180px;
+						margin: 0 auto 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -415,6 +451,35 @@
 			&-field {
 				textarea {
 					height: 100px;
+				}
+			}
+		}
+	}
+	.vacancy {
+		.name {
+			font-size: 16px;
+		}
+		.list {
+			li {
+				font-size: 12px;
+			}
+		}
+		.location {
+			font-size: 12px;
+			img {
+				width: 14px;
+			}
+		}
+	}
+	.modals {
+		&-window {
+			&[data-modal=vacancy] {
+				min-width: auto;
+				width: 100%;
+			}
+			.closer {
+				img {
+					margin-right: 20px;
 				}
 			}
 		}

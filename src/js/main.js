@@ -99,6 +99,21 @@ $(function() {
 		$steps.children().eq(i).addClass('active-step')
 	}
 
-	
+	$('.btn[data-modal-caller]').on('click', function() {
+		let modalId = this.dataset.modalCaller
+		$('.modals').show()
+		$(`.modals-window[data-modal=${modalId}]`).show()
+		$('body').addClass('openedModal')
+	})
+	$('.modals-window .closer').on('click', () => {
+		$('.modals').hide()
+		$('.modals-window').hide()
+		$('body').removeClass('openedModal')
+	})
+
+	$('.getContacts').on('click', function(e) {
+		// e.preventDefault()
+		$(this).addClass('contacted').html('<a href="tel:799999999">+7 (999) 999 99 99</a>')
+	})
 
 })

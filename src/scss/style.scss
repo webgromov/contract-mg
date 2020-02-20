@@ -18,6 +18,9 @@ $pink: #D15CE0;
 
 body {
 	font-family: "Open Sans", sans-serif;
+	&.openedModal {
+		overflow: hidden;
+	}
 }
 ul {
 	list-style: none;
@@ -143,5 +146,5 @@ section {
 
 
 @import 'parts/main';
-
-@import 'parts/resolutions';
+@import 'parts/resolutions-width';
+@import 'parts/resolutions-height';
