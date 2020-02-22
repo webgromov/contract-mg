@@ -6,7 +6,9 @@ $light-gray: #efefef;
 $pink: #D15CE0;
 
 
-
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
 .vac {
 	display: flex;
 	align-items: center;
@@ -93,16 +95,16 @@ section {
 	padding: 50px 100px;
 }
 .section {
-	&__line {
-		background-color: $cyan;
-		height: 20px;
-		width: 100%;
-		margin-bottom: 50px;
-	}
 	&-head {
 		margin-bottom: 50px;
 		&.centered {
 			text-align: center;
+		}
+		&.gradiently {
+			color: #000;
+			background: linear-gradient(45deg, $cyan, $pink);
+			// background-color: $dark;
+			padding: 40px;
 		}
 		.title {
 			font-weight: bold;

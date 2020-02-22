@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="resourcesPage">
+<body class="leaveVacancyPage">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="header-cap">
@@ -73,48 +73,93 @@
 			</ul>
 		</div>
 	</header>
-
-	<section class="resources" id="resources">
-		<div class="container-fluid">
-			<!-- Lock or not -->
-			<div class="section-head gradiently">
-				<h2 class="title">Ресурсы по контрактному менеджменту</h2>
-				<p class="desc frontLine"><em>Образцы документов для Вашей работы</em></p>
+	<section class="leaveVacancy">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto">
+					<form class="leaveVacancy-form register-form" action="#">
+						<div class="headings">
+							<h2 class="title">Оставьте анкету</h2>
+							<p class="desc">Eсли вы контрактный менеджер</p>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Номер телефона</h4>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Какие иностранные языки знаете?</h4>
+								<p>Перечислите через запятую</p>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Отрасль экономики</h4>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Образование</h4>
+								<p>Перечислите через запятую</p>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Специализация</h4>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Сколько лет работаете в контрактном менеджменте</h4>
+								<input type="number" min="1" max="100" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Перечислите проекты, в которых работали</h4>
+								<div class="multiple">
+									<div class="multiple-adder">
+										<input type="name" class="inp">
+										<button class="btn btnAdd" id="addProject"><span class="pc">Добавить проект</span><span class="mobile">+</span></button>
+									</div>
+									<ul class="multiple-box">
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>С какими компаниями работали</h4>
+								<div class="multiple">
+									<div class="multiple-adder">
+										<input type="name" class="inp">
+										<button class="btn btnAdd" id="addCompany"><span class="pc">Добавить компанию</span><span class="mobile">+</span></button>
+									</div>
+									<ul class="multiple-box">
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Отправьте фотографию вашего лица</h4>
+								<input type="file" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field btnGroup">
+							<a href="#"><input type="button" class="btn" id="login" value="Отправить вакансию"></a>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="resourcesSorting-container">
-				<select class="resourcesSorting">
-					<option>Все документы</option>
-					<option>Гарантии</option>
-					<option>Контракты</option>
-					<option>Оговорки</option>
-					<option>Письма</option>
-					<option>Претензии</option>
-					<option>Процедуры</option>
-					<option>Управление изменениями</option>
-				</select>
-			</div>
-			<ul class="resources-list">
-				<li><a data-num="1" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="2" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="3" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="4" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-
-			</ul>
 		</div>
 	</section>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row mb-4">

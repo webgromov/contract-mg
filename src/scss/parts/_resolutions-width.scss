@@ -378,6 +378,17 @@
 			height: 350px!important;
 		}
 	}
+	.postPage {
+		.comments {
+			.comment {
+				.children {
+					.comment {
+						padding-left: 15px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 640px) {
@@ -424,6 +435,27 @@
 				h2 {
 					font-size: 20px;
 					white-space: normal;
+				}
+			}
+		}
+	}
+	.postPage {
+		.header {
+			&-main {
+				padding: 60px 0;
+				.cat {
+					font-size: 15px;
+				}
+				.title {
+					font-size: 30px;
+				}
+			}
+		}
+		.post {
+			&-area {
+				font-size: 16px;
+				h2 {
+					font-size: 25px;
 				}
 			}
 		}

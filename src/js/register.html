@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="resourcesPage">
+<body class="registerPage">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="header-cap">
@@ -73,48 +73,73 @@
 			</ul>
 		</div>
 	</header>
-
-	<section class="resources" id="resources">
-		<div class="container-fluid">
-			<!-- Lock or not -->
-			<div class="section-head gradiently">
-				<h2 class="title">Ресурсы по контрактному менеджменту</h2>
-				<p class="desc frontLine"><em>Образцы документов для Вашей работы</em></p>
+	<section class="register">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto">
+					<form class="register-form" action="#">
+						<h2 class="title">Регистрация на сайте</h2>
+						<!-- TODO: Выберите статус (группа кнопок) -->
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Выберите статус</h4>
+								<select id="statusSelector">
+									<option>HR-Агенство</option>
+									<option>Контрактный менеджер</option>
+								</select>
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Имя и фамилия</h4>
+								<input type="text" class="inp" placeholder="Например: Иван">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Email</h4>
+								<input type="text" class="inp" placeholder="Например: Иван">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Город</h4>
+								<input type="text" class="inp" placeholder="Например: Иван">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Пароль</h4>
+								<input type="password" class="inp" placeholder="Например: Иван">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Повторите пароль</h4>
+								<input type="password" class="inp" placeholder="Например: Иван">
+							</div>
+						</div>
+						<div class="register-form-field btnGroup">
+							<a href="#"><input type="button" class="btn" id="login" value="Зарегистрироваться"></a>
+							<a href="/login.html"><input type="button" class="btn" id="signup" value="Уже зарегистрирован"></a>
+						</div>
+					</form>
+				</div>
+				<div class="d-none d-md-block col-md-6 col-lg-5 mr-auto">
+					<div class="register-advantages">
+						<h4 class="register-advantages-title">Что вы получите, если зарегистрируетесь?</h4>
+						<ul class="register-advantages-list">
+							<li>Эксклюзивные ресурсы</li>
+							<li>Новые контакты</li>
+							<li>Опытное сообщество</li>
+							<li>Новая специальность</li>
+							<li>Анализ "подводных камней"</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="resourcesSorting-container">
-				<select class="resourcesSorting">
-					<option>Все документы</option>
-					<option>Гарантии</option>
-					<option>Контракты</option>
-					<option>Оговорки</option>
-					<option>Письма</option>
-					<option>Претензии</option>
-					<option>Процедуры</option>
-					<option>Управление изменениями</option>
-				</select>
-			</div>
-			<ul class="resources-list">
-				<li><a data-num="1" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="2" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="3" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="4" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-
-			</ul>
 		</div>
 	</section>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row mb-4">

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="resourcesPage">
+<body class="loginPage">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="header-cap">
@@ -73,48 +73,33 @@
 			</ul>
 		</div>
 	</header>
-
-	<section class="resources" id="resources">
-		<div class="container-fluid">
-			<!-- Lock or not -->
-			<div class="section-head gradiently">
-				<h2 class="title">Ресурсы по контрактному менеджменту</h2>
-				<p class="desc frontLine"><em>Образцы документов для Вашей работы</em></p>
+	<section class="register">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto mr-auto">
+					<form class="register-form" action="#">
+						<h2 class="title">Вход на сайт</h2>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Email</h4>
+								<input type="text" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field">
+							<div class="question">
+								<h4>Пароль</h4>
+								<input type="password" class="inp">
+							</div>
+						</div>
+						<div class="register-form-field btnGroup">
+							<a href="#"><input type="button" class="btn" id="login" value="Войти"></a>
+							<a href="/register.html"><input type="button" class="btn" id="signup" value="Ещё не зарегистрирован?"></a>
+						</div>
+					</form>
+				</div>
 			</div>
-			<div class="resourcesSorting-container">
-				<select class="resourcesSorting">
-					<option>Все документы</option>
-					<option>Гарантии</option>
-					<option>Контракты</option>
-					<option>Оговорки</option>
-					<option>Письма</option>
-					<option>Претензии</option>
-					<option>Процедуры</option>
-					<option>Управление изменениями</option>
-				</select>
-			</div>
-			<ul class="resources-list">
-				<li><a data-num="1" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="2" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="3" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-				<li><a data-num="4" href="#">
-					<h3>Образец письма о намерениях</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam nostrum laboriosam facilis rem voluptatem deleniti ipsum reiciendis quibusdam nesciunt aut eos eum ut est officiis quam! Facere, dolore placeat!</p>
-				</a></li>
-
-			</ul>
 		</div>
 	</section>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="row mb-4">
