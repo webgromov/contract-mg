@@ -78,27 +78,6 @@ $(function() {
 		advMenu.fadeOut()
 	})
 
-	$('#interviewSlider').slick({
-		dots: true,
-		infinite: true,
-		prevArrow: '<img src="img/icons/arrow-down.svg" class="slick-prev">',
-		nextArrow: '<img src="img/icons/arrow-down.svg" class="slick-next">'
-	})
-
-	$('#topPosts').slick({
-		dots: true,
-		infinite: true,
-		prevArrow: '<img src="img/icons/arrow-down.svg" class="slick-prev">',
-		nextArrow: '<img src="img/icons/arrow-down.svg" class="slick-next">'
-	})
-
-	/*const $steps = $('.register-steps')
-	const currentStep = $steps.attr('data-step')
-
-	for(let i = 0; i < currentStep; i++) {
-		$steps.children().eq(i).addClass('active-step')
-	}*/
-
 	// Modals 
 
 	$('.btn[data-modal-caller]').on('click', function() {
@@ -135,5 +114,4 @@ $(function() {
 	$('.multiple-box').on('click', 'li .closer', function() {
 		$(this).parent().remove()
 	})
-
 })

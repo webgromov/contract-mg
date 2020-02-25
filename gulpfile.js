@@ -32,13 +32,13 @@ gulp.task('scripts', () => {
 })
 
 gulp.task('libs-css', () => {
-	return gulp.src(['src/libs/bootstrap/css/bootstrap.min.css', 'src/libs/slick/slick.css', 'src/libs/slick/slick-theme.css'])
+	return gulp.src(['src/libs/bootstrap/css/bootstrap.min.css'])
 	.pipe(concat('libs.min.css'))
 	.pipe(cleanCSS())
 	.pipe(gulp.dest('src/css'))
 })
 gulp.task('libs-js', () => {
-	return gulp.src(['src/libs/jquery/jquery.js', 'src/libs/slick/slick.js'])
+	return gulp.src(['src/libs/jquery/jquery.js'])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('src/js'))
