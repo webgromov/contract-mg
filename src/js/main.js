@@ -114,4 +114,10 @@ $(function() {
 	$('.multiple-box').on('click', 'li .closer', function() {
 		$(this).parent().remove()
 	})
+
+	// Slick
+	$('#topPosts').slick({
+		prevArrow: `<img class="slick-arrow slick-prev" src="img/icons/arrow-down.svg">`,
+		nextArrow: `<img class="slick-arrow slick-next" src="img/icons/arrow-down.svg">`
+	})
 })
