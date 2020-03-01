@@ -752,6 +752,17 @@
 					.topPost {
 						background: no-repeat center / cover;
 						height: 100%;
+						.topViews {
+							display: inline-block;
+							padding-right: 10px;
+							margin-right: 10px;
+							img {
+								display: inline-block;
+								margin-right: 5px;
+								width: 18px;
+							}
+							border-right: 2px solid #fff;
+						}
 						a {
 							padding: 50px;
 							background-color: rgba(#000, .3);
@@ -1262,6 +1273,7 @@
 			}
 			.title {
 				font-size: 50px;
+				max-width: 1000px;
 			}
 		}
 		.social {
