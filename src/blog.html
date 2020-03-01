@@ -66,14 +66,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="advanced-menu hidden" hidden>
-			<ul class="advanced-menu-list">
-				<li><a href="#">Something 1</a></li>
-				<li><a href="#">Something 2</a></li>
-				<li><a href="#">Something 3</a></li>
-				<li><a href="#">Something 4</a></li>
-			</ul>
-		</div>
 		<div class="header-middle">
 			<ul id="topPosts">
 				<li class="topPost" style="background-image: url(img/blog_example1.jpg)"><a href="#">
@@ -115,6 +107,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">Контрактный менеджмент</p>
 						<h3>Чек-лист: Процесс управления контрактами</h3>
@@ -124,6 +117,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">Контрактный менеджмент</p>
 						<h3>Что такое контрактный псевдо-риск?</h3>
@@ -133,6 +127,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">Переговоры</p>
 						<h3>Подписанный контакт - это только начало переговоров</h3>
@@ -142,6 +137,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">категория поста</p>
 						<h3>Название поста 1</h3>
@@ -151,6 +147,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">категория поста</p>
 						<h3>Название поста 1</h3>
@@ -160,6 +157,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<a href="#" class="post">
+						<p class="views"><img src="img/icons/eye.svg" alt="">22</p>
 						<img src="img/blog_example1.jpg" alt="">
 						<p class="cat">категория поста</p>
 						<h3>Название поста 1</h3>
@@ -208,6 +206,12 @@
 	</footer>
 	<script src="js/libs.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script>
+		$('#topPosts').slick({
+			prevArrow: '<img class="slick-arrow slick-prev" src="img/icons/arrow-down.svg">',
+			nextArrow: '<img class="slick-arrow slick-next" src="img/icons/arrow-down.svg">',
+		})
+	</script>
 	<script src="js/main.min.js"></script>
 </body>
 </html>

@@ -792,8 +792,24 @@
 	.post {
 		display: block;
 		padding-bottom: 30px;
+		position: relative;
 		img {
 			margin-bottom: 15px;
+		}
+		.views {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-weight: bold;
+			color: #fff;
+			padding: 5px 10px;
+			background-color: rgba(#000, .5);
+			img {
+				vertical-align: middle;
+				width: 18px;
+				margin-right: 5px;
+				margin-bottom: 0;
+			}
 		}
 		.cat {
 			color: lighten($dark, 10%);
