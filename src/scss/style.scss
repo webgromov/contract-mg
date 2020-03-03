@@ -91,6 +91,15 @@ textarea.inp {
 		}
 	}
 }
+input.btn {
+	&:after {
+		display: none;
+	}
+	&:hover {
+		background-color: $dark;
+	}
+}
+
 section {
 	padding: 50px 100px;
 }

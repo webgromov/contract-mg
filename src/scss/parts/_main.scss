@@ -1,6 +1,7 @@
-.mainPage header {
+// TODO: Remove background image from css
+/* .mainPage header {
 	background-image: url(https://www.acc.com/sites/default/files/2020-01/acc-billboard-kobie.jpg);
-}
+} */
 
 .header {
 	> .container, > .container-fluid {
@@ -558,6 +559,10 @@
 			h3 {
 				display: inline-block;
 				border-bottom: 6px solid $cyan;
+				small {
+					margin: auto;
+					font-size: 16px;
+				}
 			}
 		}
 	}
@@ -989,6 +994,7 @@
 		height: 500px;
 		display: flex;
 		align-items: center;
+		background: no-repeat center / cover;
 		justify-content: center;
 		span {
 			padding: 10px;
@@ -1009,6 +1015,8 @@
 	}
 	&-full {
 		text-align: center;
+		position: relative;
+		z-index: 2;
 	}
 }
 .vacancy {
@@ -1291,9 +1299,13 @@
 	.post {
 		&-area {
 			font-size: 20px;
-			white-space: pre-line;
 			h2 {
 				font-size: 35px;
+			}
+			img {
+				width: 100%;
+				max-width: 700px;
+				margin: 0 auto;
 			}
 		}
 	}

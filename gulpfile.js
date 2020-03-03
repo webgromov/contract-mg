@@ -44,6 +44,13 @@ gulp.task('libs-js', () => {
 	.pipe(gulp.dest('src/js'))
 })
 
+gulp.task('compile', gulp.parallel('styles', 'scripts'))
+gulp.task('libs', gulp.parallel('libs-css', 'libs-js'))
+gulp.task('watch', function() {
+	gulp.watch('src/scss/**/*.scss', gulp.series('styles'))
+	gulp.watch(uncomprScripts, gulp.series('scripts'))
+	gulp.watch('src/*.html').on('change', browserSync.reload)
+})
 
 gulp.task('server', () => {
 	browserSync.init({
@@ -51,12 +58,5 @@ gulp.task('server', () => {
 	})
 })
 
-
-
-gulp.task('start', gulp.parallel('styles', 'scripts', 'server', () => {
-	gulp.watch('src/scss/**/*.scss', gulp.series('styles'))
-	gulp.watch(uncomprScripts, gulp.series('scripts'))
-	gulp.watch('src/*.html').on('change', browserSync.reload)
-}))
-
+gulp.task('start', gulp.parallel('compile', 'libs', 'watch', 'server'))
 gulp.task('default', gulp.series('start'))
