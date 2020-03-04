@@ -66,60 +66,82 @@
 		</div>
 	</header>
 	<section class="leaveVacancy">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-8 ml-auto mr-auto">
 					<form class="leaveVacancy-form register-form" action="#">
 						<div class="headings">
 							<h2 class="title">Оставьте вакансию</h2>
-							<p class="desc">Eсли вы ищете специалиста</p>
+							<p class="desc">Eсли Вы ищете специалиста</p>
 						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Название компании / отрасль</h4>
-								<input type="text" class="inp">
+						<div class="fields">
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Должность</h4>
+									<input type="text" class="inp">
+								</div>
 							</div>
-						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Требования к кандидату (список)</h4>
-								<div class="multiple">
-									<div class="multiple-adder">
-										<input type="name" class="inp">
-										<button class="btn btnAdd" id="addRequirements"><span class="pc">Добавить</span><span class="mobile">+</span></button>
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Название компании / отрасль</h4>
+									<input type="text" class="inp">
+								</div>
+							</div>
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Опыт</h4>
+									<input type="text" class="inp">
+								</div>
+							</div>
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Локация</h4>
+									<input type="text" class="inp">
+								</div>
+							</div>
+							<!-- TODO: Multiply field -->
+							<!-- <div class="register-form-field">
+								<div class="question">
+									<h4>Требования к кандидату (список)</h4>
+									<div class="multiple">
+										<div class="multiple-adder">
+											<input type="name" class="inp">
+											<button class="btn btnAdd" id="addRequirements"><span class="pc">Добавить</span><span class="mobile">+</span></button>
+										</div>
+										<ul class="multiple-box">
+										</ul>
 									</div>
-									<ul class="multiple-box">
-									</ul>
+								</div>
+							</div> -->
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Заработная плата (руб.)</h4>
+									<input type="number" class="inp">
+								</div>
+							</div>
+
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Email</h4>
+									<input type="text" class="inp">
+								</div>
+							</div>
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Должностные обязанности</h4>
+									<textarea type="text" class="inp"></textarea>
+								</div>
+							</div>
+							<div class="register-form-field">
+								<div class="question">
+									<h4>Условия работы</h4>
+									<textarea type="text" class="inp"></textarea>
 								</div>
 							</div>
 						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Заработная плата (руб.)</h4>
-								<input type="number" class="inp">
+							<div class="register-form-submit">
+								<a href="#"><input type="button" class="btn" id="login" value="Оставить вакансию"></a>
 							</div>
-						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Должностные обязанности</h4>
-								<textarea type="text" class="inp"></textarea>
-							</div>
-						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Условия работы</h4>
-								<textarea type="text" class="inp"></textarea>
-							</div>
-						</div>
-						<div class="register-form-field">
-							<div class="question">
-								<h4>Ваши контакты</h4>
-								<input type="text" class="inp">
-							</div>
-						</div>
-						<div class="register-form-field btnGroup">
-							<a href="#"><input type="button" class="btn" id="login" value="Оставить вакансию"></a>
-						</div>
 					</form>
 				</div>
 			</div>
