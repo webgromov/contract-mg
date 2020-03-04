@@ -19,6 +19,18 @@
 	}
 }
 
+@media(max-width: 1300px) {
+	.modals {
+		&-window {
+			.vacancyModal {
+				&-avatar {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 1199px) {
 	section {
 		padding: 50px 0;
@@ -389,6 +401,20 @@
 			}
 		}
 	}
+	.modals {
+		&-window {
+			.vacancyModal {
+				&-data {
+					.main {
+						font-size: 18px;
+						h2 {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 640px) {
@@ -613,6 +639,13 @@
 				ul {
 					font-size: 30px;
 				}
+			}
+		}
+	}
+	.modals {
+		&-window {
+			&-content {
+				padding: 20px;
 			}
 		}
 	}
