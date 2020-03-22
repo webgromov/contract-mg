@@ -1267,6 +1267,15 @@
 				}
 			}
 		}
+		.commonError {
+			color: $cyan;
+			margin: 0;
+		}
+	}
+	#vacancySent {
+		border: 2px solid $dark;
+		padding: 30px;
+		text-align: center;
 	}
 	.register {
 		&-form {
