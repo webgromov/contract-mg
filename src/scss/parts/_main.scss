@@ -916,20 +916,17 @@
 	&-advantages {
 		// background: radial-gradient(circle at left, #6200F4, #40E0D0);
 		background-color: $light-gray;
-		border: 3px solid $dark;
 		height: 100%;
 		padding: 30px;
 		// color: #fff;
 		font-size: 17px;
 		&-title {
+			font-size: 2rem;
 			margin-bottom: 40px;
 		}
 		li {
 			font-weight: bold;
 			margin-bottom: 10px;
-			&:before {
-				content: "+ ";
-			}
 		}
 	}
 	&-form {
@@ -1005,7 +1002,7 @@
 		.question {
 			h4 {
 				margin-bottom: 0;
-				font-weight: normal;
+				font-weight: bold;
 				font-size: 18px;
 			}
 			.error {
